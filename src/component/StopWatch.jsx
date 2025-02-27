@@ -28,10 +28,15 @@ const StopWatch = () => {
    setTime(0);
  };
 
+ const hours = Math.floor(time / 3600);
+  const minutes = Math.floor((time % 3600) / 60);
+  const seconds = time % 60;
  return (
    <>
      <p>
-       Time : {time}
+       Time : {String(hours).padStart(2, '0')}:
+               {String(minutes).padStart(2, '0')}:
+               {String(seconds).padStart(2, '0')}
      </p>
      <div>
        <button onClick={startAndStop}>{isRunning ? "Stop" : "Start"}</button>
