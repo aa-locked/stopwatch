@@ -20,5 +20,4 @@ const DigitalWatch = () => {
      </p>
   )
 }
-
 export default DigitalWatch
