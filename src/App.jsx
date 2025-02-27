@@ -1,3 +1,4 @@
+import DigitalWatch from "./component/DigitalWatch"
 import StopWatch from "./component/StopWatch"
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
   return (
     <>
       <StopWatch/>
+      <DigitalWatch/>
     </>
   )
 }
